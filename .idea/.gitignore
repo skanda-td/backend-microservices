@@ -1,8 +1,55 @@
-# Default ignored files
+# IntelliJ IDEA
+.idea/
+*.iml
+/out/
+*.iws
+
+# IntelliJ specific ignored files
 /shelf/
 /workspace.xml
-# Editor-based HTTP Client requests
 /httpRequests/
-# Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build outputs
+/target/
+/build/
+
+# Gradle
+.gradle/
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Node (if frontend exists)
+node_modules/
+dist/
+
+# Environment files
+.env
+.env.*
+
+# Docker
+*.pid
+
+# Kubernetes / Helm
+*.tgz
+charts/*.tgz
+
+# Test reports
+/test-results/
+/surefire-reports/
+
+# Temporary files
+*.tmp
+*.swp
