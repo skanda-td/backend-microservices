@@ -30,6 +30,7 @@ public class SecurityConfig {
                 .authorizeExchange(exchanges -> exchanges
                         .pathMatchers("/orders/admin").hasRole("ADMIN")
                         .pathMatchers("/orders/**").hasAnyRole("USER", "ADMIN")
+                        .pathMatchers("/graphql").hasAnyRole("USER", "ADMIN")
                         .anyExchange().authenticated()
                 )
                 .oauth2ResourceServer(oauth2 ->
